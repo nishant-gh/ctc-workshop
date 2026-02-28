@@ -1,4 +1,5 @@
 import anthropic
+from datetime import datetime
 
 client = anthropic.Anthropic()
 
@@ -16,16 +17,28 @@ tools = [
             },
             "required": ["location"],
         },
-    }
+    },
+    {
+        "name": "get_time",
+        "description": "Get the current date and time",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+        },
+    },
 ]
 
-messages = [{"role": "user", "content": "What is the weather in Tokyo?"}]
+messages = [{"role": "user", "content": "What's the weather and current time in Tokyo?"}]
+
 
 def call_tool(tool_name, tool_input):
     if tool_name == "get_weather":
-        return "65 degrees"
+        return f"72°F and sunny in {tool_input['location']}"
+    elif tool_name == "get_time":
+        return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     else:
         return "Tool not found."
+
 
 while True:
     message = client.messages.create(
@@ -50,6 +63,7 @@ while True:
         if content.type == "tool_use":
             has_tool_use = True
             tool_result = call_tool(content.name, content.input)
+            print(f"  Tool: {content.name}({content.input}) → {tool_result}")
             user_message["content"].append(
                 {
                     "type": "tool_result",
