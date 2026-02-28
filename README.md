@@ -35,6 +35,7 @@ Scaffolded notebooks for the 5 agent ideas from Exercise 09. Each has one comple
 | Study Buddy | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/study_buddy.ipynb) |
 | Fitness Coach | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/fitness_coach.ipynb) |
 | Movie Recommender | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/movie_recommender.ipynb) |
+| Website Builder | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/website_builder.ipynb) |
 
 ## Multi-Agent Systems (Google ADK)
 
