@@ -237,14 +237,14 @@ agent will be unable to function.
 
         ```env title="multi_tool_agent/.env"
         GOOGLE_GENAI_USE_VERTEXAI=FALSE
-        GOOGLE_API_KEY=PASTE_YOUR_ACTUAL_API_KEY_HERE
+        GEMINI_API_KEY=PASTE_YOUR_ACTUAL_API_KEY_HERE
         ```
 
         When using Java, define environment variables:
 
         ```console title="terminal"
         export GOOGLE_GENAI_USE_VERTEXAI=FALSE
-        export GOOGLE_API_KEY=PASTE_YOUR_ACTUAL_API_KEY_HERE
+        export GEMINI_API_KEY=PASTE_YOUR_ACTUAL_API_KEY_HERE
         ```
 
         When using TypeScript, the `.env` file is automatically loaded by the `import 'dotenv/config';` line at the top of your `agent.ts` file.
@@ -295,14 +295,14 @@ agent will be unable to function.
 
         ```env title="multi_tool_agent/.env"
         GOOGLE_GENAI_USE_VERTEXAI=TRUE
-        GOOGLE_API_KEY=PASTE_YOUR_ACTUAL_EXPRESS_MODE_API_KEY_HERE
+        GEMINI_API_KEY=PASTE_YOUR_ACTUAL_EXPRESS_MODE_API_KEY_HERE
         ```
 
         When using Java, define environment variables:
 
         ```console title="terminal"
         export GOOGLE_GENAI_USE_VERTEXAI=TRUE
-        export GOOGLE_API_KEY=PASTE_YOUR_ACTUAL_EXPRESS_MODE_API_KEY_HERE
+        export GEMINI_API_KEY=PASTE_YOUR_ACTUAL_EXPRESS_MODE_API_KEY_HERE
         ```
 
         When using TypeScript, the `.env` file is automatically loaded by the `import 'dotenv/config';` line at the top of your `agent.ts` file.

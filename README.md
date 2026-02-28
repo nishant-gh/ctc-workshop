@@ -50,4 +50,4 @@ Build multi-agent pipelines and coordinator patterns using Google ADK's `sub_age
 |----------|------------------|
 | Anthropic | `ANTHROPIC_API_KEY` |
 | OpenAI | `OPENAI_API_KEY` |
-| Gemini | `GOOGLE_API_KEY` |
+| Gemini | `GEMINI_API_KEY` |
