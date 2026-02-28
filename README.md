@@ -1,0 +1,33 @@
+# CTC Workshop
+
+Build AI agents from scratch — one exercise at a time. Pick your provider and work through exercises 01–09, progressing from a simple API call to a fully custom agent.
+
+## Setup
+
+**Google Colab (recommended):** Click any link below. Add your API key in Colab via **Secrets** (🔑 icon in the left sidebar) using the variable name shown for your provider.
+
+**Local:** Install [uv](https://docs.astral.sh/uv/), set your API key as an environment variable, and run notebooks with `uv run jupyter lab`.
+
+## Foundation Exercises
+
+Each exercise builds on the previous one. Start at 01 and work your way down.
+
+| # | Exercise | Anthropic | OpenAI | Gemini |
+|---|----------|-----------|--------|--------|
+| 01 | Hello — First API call | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/01_hello/hello.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/01_hello/hello.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/01_hello/hello.ipynb) |
+| 02 | System Prompt | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/02_system_prompt/system_prompt.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/02_system_prompt/system_prompt.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/02_system_prompt/system_prompt.ipynb) |
+| 03 | Chat — Multi-turn conversation | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/03_chat/chat.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/03_chat/chat.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/03_chat/chat.ipynb) |
+| 04 | Tool — Define a tool | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/04_tool/tool.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/04_tool/tool.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/04_tool/tool.ipynb) |
+| 05 | Tool Exec — Execute tool calls | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/05_tool_exec/tool_exec.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/05_tool_exec/tool_exec.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/05_tool_exec/tool_exec.ipynb) |
+| 06 | Tool Loop — Agentic loop | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/06_tool_loop/tool_loop.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/06_tool_loop/tool_loop.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/06_tool_loop/tool_loop.ipynb) |
+| 07 | Agent A — Personal assistant | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/07_agent_personal/agent_personal.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/07_agent_personal/agent_personal.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/07_agent_personal/agent_personal.ipynb) |
+| 08 | Agent B — Support bot (SDK) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/08_agent_support/agent_support.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/08_agent_support/agent_support.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/08_agent_support/agent_support.ipynb) |
+| 09 | Agent C — Build your own! | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/09_agent_custom/agent_custom.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/09_agent_custom/agent_custom.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/09_agent_custom/agent_custom.ipynb) |
+
+### API Key Secret Names
+
+| Provider | Colab Secret Name |
+|----------|------------------|
+| Anthropic | `ANTHROPIC_API_KEY` |
+| OpenAI | `OPENAI_API_KEY` |
+| Gemini | `GOOGLE_API_KEY` |
