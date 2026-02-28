@@ -36,6 +36,14 @@ Scaffolded notebooks for the 5 agent ideas from Exercise 09. Each has one comple
 | Fitness Coach | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/fitness_coach.ipynb) |
 | Movie Recommender | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/movie_recommender.ipynb) |
 
+## Multi-Agent Systems (Google ADK)
+
+Build multi-agent pipelines and coordinator patterns using Google ADK's `sub_agents` feature. Includes a pre-built example and a TODO exercise.
+
+| Notebook | Colab |
+|----------|-------|
+| Multi-Agent Analytics | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/multi_agents_adk/multi_agents.ipynb) |
+
 ### API Key Secret Names
 
 | Provider | Colab Secret Name |
