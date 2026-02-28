@@ -24,6 +24,18 @@ Each exercise builds on the previous one. Start at 01 and work your way down.
 | 08 | Agent B — Support bot (SDK) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/08_agent_support/agent_support.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/08_agent_support/agent_support.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/08_agent_support/agent_support.ipynb) |
 | 09 | Agent C — Build your own! | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/anthropic/09_agent_custom/agent_custom.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/openai/09_agent_custom/agent_custom.ipynb) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/foundation/gemini/09_agent_custom/agent_custom.ipynb) |
 
+## Custom Agent Starters (Google ADK)
+
+Scaffolded notebooks for the 5 agent ideas from Exercise 09. Each has one complete tool as an example, with TODOs for the rest.
+
+| Agent | Colab |
+|-------|-------|
+| Travel Assistant | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/travel_assistant.ipynb) |
+| Recipe Helper | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/recipe_helper.ipynb) |
+| Study Buddy | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/study_buddy.ipynb) |
+| Fitness Coach | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/fitness_coach.ipynb) |
+| Movie Recommender | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nishant-gh/ctc-workshop/blob/main/custom_agents_adk/movie_recommender.ipynb) |
+
 ### API Key Secret Names
 
 | Provider | Colab Secret Name |
