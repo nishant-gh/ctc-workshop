@@ -1,7 +1,7 @@
 """
 Website Builder Agent (using Google ADK)
 
-An agent that generates websites from descriptions with page generation, sections, and themes.
+An agent that helps plan websites with layout, color schemes, and content suggestions.
 One tool is complete as an example — implement the remaining two TODOs.
 
 Run:  uv run python custom_agents_adk/website_builder.py
@@ -20,76 +20,64 @@ from google.genai import types
 # ============================================================
 
 
-def generate_page(page_type: str, description: str) -> dict:
-    """Generate a complete HTML page based on a page type and description.
+def generate_layout(page_type: str, description: str) -> dict:
+    """Plan the layout and sections for a website page.
 
     Args:
-        page_type: The type of page to generate (e.g. "landing", "portfolio", "blog").
-        description: A description of what the page should contain.
+        page_type: The type of page (e.g. "landing", "portfolio", "blog", "restaurant").
+        description: What the page is for and any specific requirements.
 
     Returns:
-        dict: status and the generated HTML or error message.
+        dict: status and a layout plan describing the page sections.
     """
-    html = (
-        "<!DOCTYPE html>\n"
-        '<html lang="en">\n'
-        "<head>\n"
-        '  <meta charset="UTF-8">\n'
-        '  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
-        f"  <title>{page_type.title()} Page</title>\n"
-        "  <style>\n"
-        "    * { margin: 0; padding: 0; box-sizing: border-box; }\n"
-        "    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n"
-        "    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }\n"
-        "    header { background: #2c3e50; color: white; padding: 1rem 0; }\n"
-        "    main { padding: 2rem 0; }\n"
-        "    footer { background: #34495e; color: white; padding: 1rem 0; text-align: center; }\n"
-        "  </style>\n"
-        "</head>\n"
-        "<body>\n"
-        '  <header><div class="container"><h1>' + page_type.title() + " Page</h1></div></header>\n"
-        '  <main><div class="container">\n'
-        f"    <p>{description}</p>\n"
-        "  </div></main>\n"
-        '  <footer><div class="container"><p>&copy; 2025</p></div></footer>\n'
-        "</body>\n"
-        "</html>"
-    )
     return {
         "status": "success",
-        "report": f"Generated a {page_type} page. Here is the HTML:\n\n{html}",
+        "report": (
+            f"Layout plan for a {page_type} page:\n"
+            f"1. Navigation bar — logo on the left, menu links on the right\n"
+            f"2. Hero section — large headline, subtitle, and a call-to-action button\n"
+            f"3. Features/services section — 3-column grid highlighting key offerings\n"
+            f"4. Testimonials section — customer quotes in a carousel\n"
+            f"5. Contact section — address, phone, email, and a simple form\n"
+            f"6. Footer — social media links, copyright notice\n\n"
+            f"Design notes based on description: {description}"
+        ),
     }
 
 
-def add_section(section_type: str, content: str) -> dict:
-    """Generate an HTML section to add to a page.
+def suggest_color_scheme(style: str, industry: str) -> dict:
+    """Suggest a color palette for a website based on the desired style and industry.
 
     Args:
-        section_type: The type of section (e.g. "hero", "features", "testimonials", "contact").
-        content: The text content for the section.
+        style: The visual style (e.g. "professional", "playful", "dark", "minimal", "bold").
+        industry: The business type (e.g. "restaurant", "tech startup", "law firm", "photography").
 
     Returns:
-        dict: status and the generated HTML section or error message.
+        dict: status and a recommended color palette.
     """
     # TODO: implement — return a dict with "status" and "report" keys
-    # Hint: return a hardcoded HTML snippet for the section_type, incorporating content
-    # Example: a "hero" section might be a <section> with a heading, paragraph, and a CTA button
+    # Hint: return a hardcoded color palette as plain text, e.g.:
+    #   "Primary: deep navy (#1a2b4a), Accent: warm gold (#d4a843),
+    #    Background: off-white (#f9f6f0), Text: charcoal (#2d2d2d)"
+    # You can vary the palette based on style or industry if you want!
     pass
 
 
-def apply_theme(html: str, theme: str) -> dict:
-    """Apply a visual theme to an HTML page by injecting CSS styles.
+def suggest_content(section_type: str, business_name: str) -> dict:
+    """Generate suggested copywriting text for a website section.
 
     Args:
-        html: The HTML string to apply the theme to.
-        theme: The theme name (e.g. "modern", "minimal", "bold").
+        section_type: The section to write for (e.g. "hero", "about", "testimonials", "call_to_action").
+        business_name: The name of the business the website is for.
 
     Returns:
-        dict: status and the themed HTML or error message.
+        dict: status and suggested text content for the section.
     """
     # TODO: implement — return a dict with "status" and "report" keys
-    # Hint: define a CSS string for each theme and inject it into the <head> of the HTML
-    # Example: "modern" might use a gradient background and rounded corners
+    # Hint: return hardcoded marketing copy, e.g. for a "hero" section:
+    #   "Headline: Welcome to {business_name}
+    #    Subtitle: We bring your ideas to life.
+    #    Button text: Get Started"
     pass
 
 
@@ -100,13 +88,13 @@ def apply_theme(html: str, theme: str) -> dict:
 agent = Agent(
     model="gemini-3-flash-preview",
     name="website_builder",
-    # TODO: Write an instruction that gives the agent a web-developer persona.
+    # TODO: Write an instruction that gives the agent a web-designer persona.
     # Hint: describe what the agent can help with, its tone, and any guidelines.
-    instruction="""You are a helpful website builder assistant.
+    instruction="""You are a helpful website planning assistant.
 
 Replace this with your agent's persona and guidelines.
 """,
-    tools=[generate_page, add_section, apply_theme],
+    tools=[generate_layout, suggest_color_scheme, suggest_content],
 )
 
 
